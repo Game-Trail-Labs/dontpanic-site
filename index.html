@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Panic - Anxiety & Panic Attack Relief App for iPhone</title>
+    <meta name="description" content="Your pocket companion for panic attacks and anxiety. Guided breathing, grounding exercises, meditations, and evidence-based tools. Available on iPhone and Apple Watch.">
+    <meta name="keywords" content="panic attack app, anxiety relief, breathing exercises, grounding techniques, mental health, meditation, iPhone app, Apple Watch">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Don't Panic - Anxiety & Panic Attack Relief">
+    <meta property="og:description" content="Evidence-based tools to help you through panic attacks and anxiety. iPhone & Apple Watch.">
+    <meta property="og:image" content="https://dontpanicapp.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dontpanicapp.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Don't Panic - Anxiety & Panic Attack Relief">
+    <meta name="twitter:description" content="Evidence-based tools to help you through panic attacks and anxiety. iPhone & Apple Watch.">
+    <meta name="twitter:image" content="https://dontpanicapp.com/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="app-icon.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <img src="app-icon.png" alt="Don't Panic" class="logo-img">
+                <span class="logo-text">Don't Panic</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="support.html">Support</a>
+                <a href="https://apps.apple.com/app/dont-panic" class="btn btn-primary btn-sm">
+                    <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    Get the App
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="mobile-badge">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+                    Available on iPhone & Apple Watch
+                </div>
+                <h1>Don't Panic</h1>
+                <p class="hero-tagline">Your panic and anxiety toolkit, always in your pocket</p>
+                <p class="hero-subtitle">
+                    If you've ever had a panic attack, you know how helpless it feels.
+                    Don't Panic puts a full guided panic response system in your pocket—grounding,
+                    breathing, cognitive reframes, and recovery tools that actually help in the moment.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://apps.apple.com/app/dont-panic" class="btn btn-primary btn-lg">
+                        <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        Get Your Free Panic Toolkit
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary btn-lg">See How It Works</a>
+                </div>
+                <div class="hero-stats fade-in">
+                    <div class="stat">
+                        <span class="stat-number" data-target="8">0</span>
+                        <span class="stat-label">Panic response phases</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="40" data-suffix="+">0</span>
+                        <span class="stat-label">Recovery lessons</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="12">0</span>
+                        <span class="stat-label">Evidence-based tools</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="screenshot.png" alt="Don't Panic App Screenshot" class="hero-screenshot">
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>An 8-phase guided panic response</h2>
+                <p>Not just a breathing timer. A full guided system that meets you where you are.</p>
+            </div>
+            
+            <div class="panic-phases">
+                <div class="phase-row fade-in-children fade-in">
+                    <div class="phase">
+                        <div class="phase-number">1</div>
+                        <div class="phase-content">
+                            <h4>Acknowledge</h4>
+                            <p>Validates what you're feeling and calms the initial shock.</p>
+                        </div>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-number">2</div>
+                        <div class="phase-content">
+                            <h4>Ground</h4>
+                            <p>5-4-3-2-1 sensory technique to anchor you in the present.</p>
+                        </div>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-number">3</div>
+                        <div class="phase-content">
+                            <h4>Breathe</h4>
+                            <p>Guided breathing with visual pacer and haptic feedback.</p>
+                        </div>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-number">4</div>
+                        <div class="phase-content">
+                            <h4>Reassure</h4>
+                            <p>Cognitive reframes based on CBT to challenge panic thoughts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="phase-row">
+                    <div class="phase">
+                        <div class="phase-number">5</div>
+                        <div class="phase-content">
+                            <h4>Distract</h4>
+                            <p>Light mental tasks to redirect your focus away from panic.</p>
+                        </div>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-number">6</div>
+                        <div class="phase-content">
+                            <h4>Body Scan</h4>
+                            <p>Progressive relaxation to release physical tension.</p>
+                        </div>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-number">7</div>
+                        <div class="phase-content">
+                            <h4>Affirm</h4>
+                            <p>Positive affirmations to rebuild confidence and calm.</p>
+                        </div>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-number">8</div>
+                        <div class="phase-content">
+                            <h4>Recover</h4>
+                            <p>Celebration, progress logging, and next-step tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panic-note fade-in">
+                <p><strong>Quick path available</strong> — skip straight to what works for you, or follow the full guided experience.</p>
+            </div>
+        </div>
+        <div class="wave-divider wave-bottom">
+            <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 50L60 45.8C120 41.7 240 33.3 360 37.5C480 41.7 600 58.3 720 62.5C840 66.7 960 58.3 1080 50C1200 41.7 1320 33.3 1380 29.2L1440 25V100H1380C1320 100 1200 100 1080 100C960 100 840 100 720 100C600 100 480 100 360 100C240 100 120 100 60 100H0V50Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Built For Section -->
+    <section class="built-for-section">
+        <div class="container">
+            <div class="built-for fade-in">
+                <h3>Built for people who</h3>
+                <div class="built-for-list fade-in-children fade-in">
+                    <div class="built-for-item">Have experienced a panic attack and want to be ready next time</div>
+                    <div class="built-for-item">Live with generalized anxiety and want daily coping tools</div>
+                    <div class="built-for-item">Are working through anxiety with a therapist and need support between sessions</div>
+                    <div class="built-for-item">Want evidence-based techniques, not generic wellness advice</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Everything you need to manage anxiety</h2>
+                <p>Tools informed by cognitive behavioral therapy and mindfulness research.</p>
+            </div>
+
+            <!-- In the Moment -->
+            <div class="feature-group fade-in">
+                <h3 class="feature-group-label">In the moment</h3>
+                <div class="features-grid features-grid-3">
+                    <div class="feature-card featured">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </div>
+                        <h3>8-Phase Panic Relief</h3>
+                        <p>A full guided system that walks you from the first wave of panic through grounding, breathing, cognitive reframes, and recovery.</p>
+                        <span class="feature-badge">Core Feature</span>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93s3.05-7.44 7-7.93v15.86zm2-15.86c1.03.13 2 .45 2.87.93H13v-.93zM13 7h5.24c.25.31.48.65.68 1H13V7zm0 3h6.74c.08.33.15.66.19 1H13v-1zm0 9.93V19h2.87c-.87.48-1.84.8-2.87.93zM18.24 17H13v-1h5.92c-.2.35-.43.69-.68 1zm1.5-3H13v-1h6.93c-.04.34-.11.67-.19 1z"/></svg>
+                        </div>
+                        <h3>Breathing Exercises</h3>
+                        <p>Box breathing, 4-7-8, physiological sigh, and more with animated pacers and haptic guidance.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                        </div>
+                        <h3>Grounding Techniques</h3>
+                        <p>5-4-3-2-1 sensory, ice cube technique, progressive muscle relaxation, and more to anchor you in the present.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daily Recovery -->
+            <div class="feature-group fade-in">
+                <h3 class="feature-group-label">Daily recovery</h3>
+                <div class="features-grid features-grid-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </div>
+                        <h3>Guided Meditations</h3>
+                        <p>Sessions for anxiety relief, sleep preparation, and daily mindfulness—available anytime.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+                        </div>
+                        <h3>40+ Recovery Lessons</h3>
+                        <p>Understand panic disorder, learn CBT techniques, and build long-term resilience with quizzes and action steps.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        </div>
+                        <h3>Guided Journal</h3>
+                        <p>Track moods with 6 templates including gratitude, anxiety log, and daily check-ins.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track Your Progress -->
+            <div class="feature-group fade-in">
+                <h3 class="feature-group-label">Track your progress</h3>
+                <div class="features-grid features-grid-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        </div>
+                        <h3>Goal Tracking</h3>
+                        <p>Set recovery goals across 9 categories with action items and progress visualization.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+                        </div>
+                        <h3>Progress Analytics</h3>
+                        <p>Visualize your panic-free streaks, breathing minutes, and improvement over weeks and months.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/></svg>
+                        </div>
+                        <h3>Fear Ladder</h3>
+                        <p>Build your exposure hierarchy and track progress as you gradually face anxiety triggers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Tools -->
+            <div class="feature-group fade-in">
+                <h3 class="feature-group-label">More tools</h3>
+                <div class="features-grid features-grid-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15 7.5V2H9v5.5l3 3 3-3zM7.5 9H2v6h5.5l3-3-3-3zM9 16.5V22h6v-5.5l-3-3-3 3zM16.5 9l-3 3 3 3H22V9h-5.5z"/></svg>
+                        </div>
+                        <h3>4 Calming Games</h3>
+                        <p>Bubble Calm, Trivia, Intrusive Thoughts Shooter, and Snake Zen—designed to redirect anxious thoughts.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+                        </div>
+                        <h3>250+ Affirmations</h3>
+                        <p>Grounded in CBT and mindfulness principles to help challenge anxious thought patterns.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/></svg>
+                        </div>
+                        <h3>Apple Watch</h3>
+                        <p>Quick access to panic relief, breathing, and grounding right from your wrist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider wave-bottom">
+            <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 0L48 8.3C96 16.7 192 33.3 288 41.7C384 50 480 50 576 45.8C672 41.7 768 33.3 864 29.2C960 25 1056 25 1152 33.3C1248 41.7 1344 58.3 1392 66.7L1440 75V100H1392C1344 100 1248 100 1152 100C1056 100 960 100 864 100C768 100 672 100 576 100C480 100 384 100 288 100C192 100 96 100 48 100H0V0Z" fill="#f8fafc"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Founder Story + Trust Section -->
+    <section class="trust">
+        <div class="container">
+            <div class="founder-story fade-in">
+                <h2>Built by someone who's been there</h2>
+                <div class="founder-quote">
+                    <p>
+                        In my twenties, panic disorder and anxiety took over my life. For two years 
+                        I couldn't go to restaurants or social events, couldn't ride in cars or get 
+                        on planes. My personal and professional life suffered. Every day was a 
+                        minute-by-minute battle.
+                    </p>
+                    <p>
+                        Through cognitive behavioral therapy and exposure therapy, I learned the facts 
+                        about what was actually happening to me. Understanding the science behind panic 
+                        and implementing the tools I learned to fight back is what ultimately freed me.
+                    </p>
+                    <p>
+                        I built Don't Panic to put those same tools&mdash;the ones that gave me my life 
+                        back&mdash;into your pocket for the moment you need them most.
+                    </p>
+                    <p>
+                        I recovered. I found balance. I got my life back. I want to help you get there too.
+                    </p>
+                    <div class="founder-name">&mdash; Brandon, Founder of Don't Panic</div>
+                </div>
+            </div>
+
+            <div class="trust-details fade-in">
+                <p class="trust-subtitle">
+                    Every tool in the app is informed by Cognitive Behavioral Therapy (CBT), 
+                    mindfulness-based stress reduction, and exposure therapy.
+                </p>
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <svg class="trust-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                        <span>Private & Secure</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg class="trust-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        <span>Research-Informed</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg class="trust-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+                        <span>Works Offline</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg class="trust-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/></svg>
+                        <span>Apple Watch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Simple, transparent pricing</h2>
+                <p>Start with a 14-day free trial. Full access to all features.</p>
+            </div>
+            
+            <!-- Free Forever Callout -->
+            <div class="free-tier-callout fade-in">
+                <h3>Free forever — no account needed</h3>
+                <p>Core panic relief tools are always free. No trial, no credit card.</p>
+                <div class="free-features-list">
+                    <div class="free-feature">Full 8-phase Panic Button</div>
+                    <div class="free-feature">2 breathing exercises</div>
+                    <div class="free-feature">2 grounding techniques</div>
+                    <div class="free-feature">3 recovery lessons</div>
+                    <div class="free-feature">25 panic facts</div>
+                    <div class="free-feature">1 calming game</div>
+                </div>
+            </div>
+
+            <p class="premium-intro">Want the full toolkit? Unlock everything with Premium.</p>
+
+            <div class="premium-card fade-in">
+                <div class="plan-toggle">
+                    <button class="plan-option active" data-plan="annual">Annual</button>
+                    <button class="plan-option" data-plan="monthly">Monthly</button>
+                </div>
+
+                <div class="plan-pricing" id="plan-annual">
+                    <div class="price">
+                        <span class="amount">$49.99</span>
+                        <span class="period">/year</span>
+                    </div>
+                    <p class="savings">Save 40% vs monthly</p>
+                </div>
+
+                <div class="plan-pricing hidden" id="plan-monthly">
+                    <div class="price">
+                        <span class="amount">$6.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+
+                <ul class="pricing-features">
+                    <li>Everything in Free, plus:</li>
+                    <li>40+ recovery lessons with quizzes</li>
+                    <li>Full meditation library</li>
+                    <li>Full breathing library</li>
+                    <li>Full grounding library</li>
+                    <li>Guided journal with 6 templates</li>
+                    <li>Goal tracking across 9 categories</li>
+                    <li>4 calming games &amp; 500+ trivia questions</li>
+                    <li>Affirmations tool (250+ affirmations)</li>
+                    <li>Exposure hierarchy tracker</li>
+                    <li>Apple Watch companion app</li>
+                    <li>iCloud sync across devices</li>
+                </ul>
+
+                <a href="https://apps.apple.com/app/dont-panic" class="btn btn-primary">Download Free</a>
+            </div>
+            
+            <div class="pricing-note">
+                <p><strong>14-day free trial of all premium features</strong> • Cancel anytime • No commitment</p>
+            </div>
+        </div>
+        <div class="wave-divider wave-bottom">
+            <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 0L48 12.5C96 25 192 50 288 54.2C384 58.3 480 41.7 576 33.3C672 25 768 25 864 33.3C960 41.7 1056 58.3 1152 62.5C1248 66.7 1344 58.3 1392 54.2L1440 50V100H1392C1344 100 1248 100 1152 100C1056 100 960 100 864 100C768 100 672 100 576 100C480 100 384 100 288 100C192 100 96 100 48 100H0V0Z" fill="#f8fafc"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="wave-divider wave-top">
+            <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 100L48 87.5C96 75 192 50 288 41.7C384 33.3 480 41.7 576 50C672 58.3 768 66.7 864 66.7C960 66.7 1056 58.3 1152 50C1248 41.7 1344 33.3 1392 29.2L1440 25V0H1392C1344 0 1248 0 1152 0C1056 0 960 0 864 0C768 0 672 0 576 0C480 0 384 0 288 0C192 0 96 0 48 0H0V100Z" fill="#f8fafc"/>
+            </svg>
+        </div>
+        <div class="container">
+            <h2>You don't have to face it alone</h2>
+            <p>Core panic relief tools are free forever. No account, no credit card.</p>
+            <a href="https://apps.apple.com/app/dont-panic" class="btn btn-white btn-lg">
+                <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                Get Your Free Panic Toolkit
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo">
+                        <img src="app-icon.png" alt="Don't Panic" class="logo-img">
+                        <span class="logo-text">Don't Panic</span>
+                    </a>
+                    <p>Your pocket companion for anxiety and panic attacks. Available on iPhone and Apple Watch.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>App</h4>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="https://apps.apple.com/app/dont-panic">Download for iPhone</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="support.html">Help Center</a>
+                        <a href="mailto:support@dontpanicapp.com">Contact Us</a>
+                        <a href="support.html#faq">FAQ</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Don't Panic. All rights reserved.</p>
+                <p class="disclaimer">This app is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle with accessibility
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', function() {
+            const isOpen = navLinks.classList.toggle('active');
+            this.classList.toggle('active');
+            this.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Close menu when a nav link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!menuBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+                menuBtn.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Plan toggle (annual/monthly)
+        document.querySelectorAll('.plan-option').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.plan-option').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                document.querySelectorAll('.plan-pricing').forEach(p => p.classList.add('hidden'));
+                document.getElementById('plan-' + this.dataset.plan).classList.remove('hidden');
+            });
+        });
+
+        // --- Navbar scroll effect ---
+        const navbar = document.querySelector('.navbar');
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }, { passive: true });
+
+        // --- Scroll-triggered fade-in animations ---
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -40px 0px'
+        };
+
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    fadeObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .fade-in-children').forEach(el => {
+            fadeObserver.observe(el);
+        });
+
+        // --- Animated stat counters ---
+        let statsAnimated = false;
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !statsAnimated) {
+                    statsAnimated = true;
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) statsObserver.observe(heroStats);
+
+        function animateCounters() {
+            document.querySelectorAll('.stat-number[data-target]').forEach(counter => {
+                const target = parseInt(counter.dataset.target);
+                const suffix = counter.dataset.suffix || '';
+                const duration = 1500;
+                const start = performance.now();
+
+                function update(now) {
+                    const elapsed = now - start;
+                    const progress = Math.min(elapsed / duration, 1);
+                    // Ease-out cubic
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.round(eased * target);
+                    counter.textContent = current + suffix;
+                    if (progress < 1) {
+                        requestAnimationFrame(update);
+                    }
+                }
+                requestAnimationFrame(update);
+            });
+        }
+    </script>
+</body>
+</html>

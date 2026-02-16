@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Don't Panic App</title>
+    <meta name="description" content="Get help with Don't Panic app. FAQs, contact support, and troubleshooting guides.">
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="app-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .support-card {
+            padding: 2rem;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .support-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+        
+        .support-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .support-card h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .support-card p {
+            color: var(--gray-500);
+            margin-bottom: 1rem;
+        }
+        
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid var(--gray-200);
+            padding: 1.5rem 0;
+        }
+        
+        .faq-question {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--gray-900);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--gray-400);
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            padding-top: 1rem;
+            color: var(--gray-600);
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .contact-section {
+            background: var(--gray-50);
+            padding: 4rem;
+            border-radius: var(--radius-xl);
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .contact-section h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .contact-section p {
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+        }
+        
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .support-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <img src="app-icon.png" alt="Don't Panic" class="logo-img">
+                <span class="logo-text">Don't Panic</span>
+            </a>
+            <div class="nav-links">
+                <a href="/#features">Features</a>
+                <a href="/#pricing">Pricing</a>
+                <a href="support.html">Support</a>
+                <a href="https://apps.apple.com/app/dont-panic" class="btn btn-primary btn-sm">
+                    <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    Get the App
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Support Center</h1>
+            <p>We're here to help</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="page-content">
+        <div class="container">
+            
+            <!-- Support Options -->
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">📧</div>
+                    <h3>Email Support</h3>
+                    <p>Get help from our team within 24-48 hours.</p>
+                    <a href="mailto:support@dontpanicapp.com" class="btn btn-secondary">Contact Us</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">📖</div>
+                    <h3>FAQ</h3>
+                    <p>Find answers to common questions below.</p>
+                    <a href="#faq" class="btn btn-secondary">View FAQ</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">⭐</div>
+                    <h3>Feature Requests</h3>
+                    <p>Have an idea? We'd love to hear it!</p>
+                    <a href="mailto:feedback@dontpanicapp.com" class="btn btn-secondary">Send Feedback</a>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div id="faq" class="faq-section">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What is Don't Panic?</div>
+                    <div class="faq-answer">
+                        Don't Panic is a mobile app designed to help you manage anxiety and panic attacks. 
+                        It provides guided breathing exercises, grounding techniques, meditations, educational 
+                        lessons, journaling, and progress tracking—all based on evidence-based approaches 
+                        like Cognitive Behavioral Therapy (CBT) and mindfulness.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is Don't Panic free?</div>
+                    <div class="faq-answer">
+                        Yes! The core panic relief tools are free forever, including the Panic Button with 
+                        8-phase guidance, basic breathing exercises, and the 5-4-3-2-1 grounding technique. 
+                        Premium features like the full lesson library, meditations, journal, and goals 
+                        require a subscription after a 14-day free trial.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How much does Premium cost?</div>
+                    <div class="faq-answer">
+                        Premium is available as a monthly subscription ($6.99/month) or annual subscription 
+                        ($49.99/year). The annual plan saves you 40% compared to paying monthly. New users 
+                        get a 14-day free trial of all premium features when they first install the app.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I cancel my subscription?</div>
+                    <div class="faq-answer">
+                        To cancel your subscription:<br><br>
+                        1. Open the <strong>Settings</strong> app on your iPhone<br>
+                        2. Tap your name at the top<br>
+                        3. Tap <strong>Subscriptions</strong><br>
+                        4. Find <strong>Don't Panic</strong> and tap it<br>
+                        5. Tap <strong>Cancel Subscription</strong><br><br>
+                        You'll continue to have access until the end of your current billing period.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I restore my purchase?</div>
+                    <div class="faq-answer">
+                        If you've previously subscribed and need to restore your purchase:<br><br>
+                        1. Open the Don't Panic app<br>
+                        2. Go to <strong>Settings</strong> (gear icon)<br>
+                        3. Tap <strong>Restore Purchases</strong><br><br>
+                        Make sure you're signed in with the same Apple ID you used to purchase.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Does the app work offline?</div>
+                    <div class="faq-answer">
+                        Yes! All features work offline, including the Panic Button, breathing exercises, 
+                        grounding techniques, and lessons. The only feature that requires internet is 
+                        iCloud sync (to sync data across your devices).
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is my data private?</div>
+                    <div class="faq-answer">
+                        Absolutely. Your data is stored locally on your device and optionally in your 
+                        personal iCloud account. We do not have access to your journal entries, goals, 
+                        or any personal content. We never sell your data. See our 
+                        <a href="privacy.html">Privacy Policy</a> for details.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I sync across devices?</div>
+                    <div class="faq-answer">
+                        With Premium, you can sync your data across all your Apple devices using iCloud. 
+                        Make sure you're signed into the same Apple ID on all devices and have iCloud 
+                        enabled for Don't Panic in your device settings.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is Don't Panic a replacement for therapy?</div>
+                    <div class="faq-answer">
+                        No. Don't Panic is a self-help wellness tool that complements professional treatment, 
+                        but it is not a substitute for therapy, counseling, or medical care. If you're 
+                        struggling with anxiety or panic disorder, we encourage you to seek help from a 
+                        qualified mental health professional.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I export my data?</div>
+                    <div class="faq-answer">
+                        Premium users can export their goals and journal entries. Go to the Goals or Journal 
+                        section, tap the menu icon, and select "Export." You can export in JSON, CSV, or 
+                        text format and share via email, Messages, or other apps.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Does the app support Apple Watch?</div>
+                    <div class="faq-answer">
+                        Yes! The Apple Watch companion app gives you quick access to the Panic Button, 
+                        breathing exercises, 5-4-3-2-1 grounding, and affirmations right from your wrist.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">I found a bug. How do I report it?</div>
+                    <div class="faq-answer">
+                        Please email us at <a href="mailto:bugs@dontpanicapp.com">bugs@dontpanicapp.com</a> 
+                        with a description of the issue, what you expected to happen, your device model, 
+                        and iOS version. Screenshots or screen recordings are very helpful!
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h2>Still need help?</h2>
+                <p>Our support team typically responds within 24-48 hours.</p>
+                <a href="mailto:support@dontpanicapp.com" class="contact-email">
+                    <span>📧</span>
+                    <span>support@dontpanicapp.com</span>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo">
+                        <img src="app-icon.png" alt="Don't Panic" class="logo-img">
+                        <span class="logo-text">Don't Panic</span>
+                    </a>
+                    <p>Your pocket companion for anxiety and panic attacks.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>App</h4>
+                        <a href="/#features">Features</a>
+                        <a href="/#pricing">Pricing</a>
+                        <a href="https://apps.apple.com/app/dont-panic">Download</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="support.html">Help Center</a>
+                        <a href="mailto:support@dontpanicapp.com">Contact Us</a>
+                        <a href="support.html#faq">FAQ</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Don't Panic. All rights reserved.</p>
+                <p class="disclaimer">This app is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle with accessibility
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (menuBtn && navLinks) {
+            menuBtn.addEventListener('click', function() {
+                const isOpen = navLinks.classList.toggle('active');
+                this.classList.toggle('active');
+                this.setAttribute('aria-expanded', isOpen);
+            });
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    menuBtn.classList.remove('active');
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e) {
+                if (!menuBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                    menuBtn.classList.remove('active');
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        // FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
