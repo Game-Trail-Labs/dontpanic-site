@@ -24,19 +24,19 @@ git push -u origin main
 4. Select **main** branch and **/ (root)**
 5. Click **Save**
 
-Your site will be live at: `https://YOUR-USERNAME.github.io/dontpanic-site`
+Your site will be live at: `https://Game-Trail-Labs.github.io/dontpanic-site`
 
 ### 3. Add Custom Domain (Optional)
 
 #### Configure GitHub
 1. In Settings → Pages → Custom domain
-2. Enter `dontpanicapp.com`
+2. Enter `dont-panic-app.com`
 3. Check "Enforce HTTPS"
 
 #### Configure DNS (at your registrar)
 Add these DNS records:
 
-**A Records** (for apex domain `dontpanicapp.com`):
+**A Records** (for apex domain `dont-panic-app.com`):
 ```
 185.199.108.153
 185.199.109.153
@@ -44,9 +44,9 @@ Add these DNS records:
 185.199.111.153
 ```
 
-**CNAME Record** (for `www.dontpanicapp.com`):
+**CNAME Record** (for `www.dont-panic-app.com`):
 ```
-YOUR-USERNAME.github.io
+Game-Trail-Labs.github.io
 ```
 
 DNS changes can take up to 48 hours to propagate.
@@ -76,11 +76,11 @@ Search and replace `https://apps.apple.com/app/dont-panic` with your actual App 
 
 ### Update Email Addresses
 Default emails used:
-- `support@dontpanicapp.com`
-- `privacy@dontpanicapp.com`
-- `legal@dontpanicapp.com`
-- `feedback@dontpanicapp.com`
-- `bugs@dontpanicapp.com`
+- `support@dont-panic-app.com`
+- `privacy@dont-panic-app.com`
+- `feedback@dont-panic-app.com`
+- `bugs@dont-panic-app.com`
+- `inquiries@dont-panic-app.com`
 
 You can use email forwarding to route all these to one inbox.
 
@@ -90,7 +90,7 @@ Replace `screenshot.png` with an actual iPhone screenshot of your app (ideally f
 ## Domain Recommendations
 
 Good domains to check availability:
-- dontpanicapp.com ✓
+- dont-panic-app.com ✓
 - dontpanic.app
 - getdontpanic.com
 - trydontpanic.com
