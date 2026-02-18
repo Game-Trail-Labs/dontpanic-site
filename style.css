@@ -149,10 +149,29 @@ h1, h2, h3, h4, h5, h6 {
     height: 1.25rem;
 }
 
+/* ===== Announcement Banner ===== */
+.announcement-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    background: var(--gradient);
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.announcement-banner strong {
+    font-weight: 700;
+}
+
 /* ===== Navigation ===== */
 .navbar {
     position: fixed;
-    top: 0;
+    top: 2rem;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -285,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== Hero Section ===== */
 .hero {
     position: relative;
-    padding: 8rem 0 10rem;
+    padding: 10rem 0 10rem;
     background: var(--gradient-soft);
     overflow: visible;
 }
@@ -1590,7 +1609,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Page-specific Styles ===== */
 .page-header {
-    padding: 8rem 0 3rem;
+    padding: 10rem 0 3rem;
     background: var(--gradient-soft);
     text-align: center;
 }
