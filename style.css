@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== Navigation ===== */
 .navbar {
     position: fixed;
-    top: 2rem;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -304,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== Hero Section ===== */
 .hero {
     position: relative;
-    padding: 10rem 0 10rem;
+    padding: 8rem 0 10rem;
     background: var(--gradient-soft);
     overflow: visible;
 }
@@ -1609,7 +1609,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Page-specific Styles ===== */
 .page-header {
-    padding: 10rem 0 3rem;
+    padding: 8rem 0 3rem;
     background: var(--gradient-soft);
     text-align: center;
 }
