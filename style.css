@@ -259,6 +259,15 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-lg);
 }
 
+.hero-eyebrow {
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
 .hero-tagline {
     font-size: 1.2rem;
     font-weight: 600;
@@ -1663,4 +1672,65 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.875rem;
     color: var(--gray-500);
     margin-bottom: 2rem;
+}
+
+/* ===== FAQ Section ===== */
+.faq-section {
+    padding: 5rem 0;
+    background: var(--gray-50);
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 0.5rem;
+}
+
+.faq-section .section-subtitle {
+    text-align: center;
+    color: var(--gray-600);
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--white);
+    padding: 1.75rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200);
+}
+
+.faq-item h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: 0.75rem;
+}
+
+.faq-item p {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--gray-600);
+}
+
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .faq-section h2 {
+        font-size: 2rem;
+    }
 }
