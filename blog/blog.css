@@ -78,8 +78,8 @@ img { max-width: 100%; display: block; }
 .nav-links a.active { color: var(--primary); font-weight: 600; }
 
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 50px; font-weight: 600; font-size: .935rem; transition: all var(--transition); text-decoration: none; cursor: pointer; border: none; }
-.btn-primary { background: var(--primary); color: #fff; }
-.btn-primary:hover { background: var(--primary-dark); color: #fff; transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.btn-primary { background: var(--primary); color: #fff !important; }
+.btn-primary:hover { background: var(--primary-dark); color: #fff !important; transform: translateY(-1px); box-shadow: var(--shadow-md); }
 .btn-sm { padding: 8px 18px; font-size: .875rem; }
 
 .apple-icon { width: 16px; height: 16px; }
